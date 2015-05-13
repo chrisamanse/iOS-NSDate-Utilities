@@ -75,7 +75,29 @@ NSDate+Main also provides an NSDateUnit enum to enumerate Year, Month, Week, Day
     today == today // True
     today != NSDate.tomorrow()
 
+## NSDate+Periods.swift:
 
+    let date = NSDate.dateWithYear(2015, month: 10, day: 20, hour: 8, minute: 40, second: 9) // Oct 20, 2015 8:40:09 AM
+    date.startOf(.Day) // Oct 20, 2015 at 12 AM
+    date.startOf(.Month) // Oct 1, 2015, 12 AM
+    date.startOf(.Year) // Jan 1, 2015, 12 AM
+    // You can also use .Second, .Minute, .Hour, and .Week
+    
+    date.endOf(.Day) // Oct 20, 2015 at 11:59:59 PM
+    date.endOf(.Month) // Oct 31, 2015, 11:59:59 PM
+    date.endOf(.Year) // Dec 31, 2015, 11:59:59 PM
+    // You can also use .Second, .Minute, .Hour, and .Week
+    
+    date.next(.Day) // Oct 21, 2015 at 8:40:09 AM
+    date.next(.Month) // Nov 20, 2015, 8:40:09 AM
+    date.next(.Year) // Oct 20, 2016, 8:40:09 AM
+    // You can also use .Second, .Minute, .Hour, and .Week
+    
+    date.previous(.Day) // Oct 19, 2015 at 8:40:09 AM
+    date.previous(.Month) // Sept 20, 2015, 8:40:09 AM
+    date.previous(.Year) // Oct 20, 2014, 8:40:09 AM
+    // You can also use .Second, .Minute, .Hour, and .Week
+    
 
 # License
 This software is licensed under the [MIT License](./LICENSE.md)
