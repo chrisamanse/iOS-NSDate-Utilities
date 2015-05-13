@@ -13,6 +13,10 @@
 		DF5FA9831B031C1A00EFDA42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5FA9821B031C1A00EFDA42 /* Images.xcassets */; };
 		DF5FA9861B031C1A00EFDA42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5FA9841B031C1A00EFDA42 /* LaunchScreen.xib */; };
 		DF5FA9921B031C1A00EFDA42 /* NSDate_ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA9911B031C1A00EFDA42 /* NSDate_ExtensionsTests.swift */; };
+		DF5FA99C1B031C9100EFDA42 /* NSDate+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA99B1B031C9100EFDA42 /* NSDate+Main.swift */; };
+		DF5FA99F1B031E1100EFDA42 /* NSDate+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA99E1B031E1000EFDA42 /* NSDate+Comparable.swift */; };
+		DF5FA9A11B031E9C00EFDA42 /* NSDate+Periods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA9A01B031E9C00EFDA42 /* NSDate+Periods.swift */; };
+		DF789A4C1B03CBF000F16AA7 /* NSDate+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF789A4B1B03CBF000F16AA7 /* NSDate+Count.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		DF5FA98B1B031C1A00EFDA42 /* NSDate_ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSDate_ExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5FA9901B031C1A00EFDA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF5FA9911B031C1A00EFDA42 /* NSDate_ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate_ExtensionsTests.swift; sourceTree = "<group>"; };
+		DF5FA99B1B031C9100EFDA42 /* NSDate+Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Main.swift"; sourceTree = "<group>"; };
+		DF5FA99E1B031E1000EFDA42 /* NSDate+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Comparable.swift"; sourceTree = "<group>"; };
+		DF5FA9A01B031E9C00EFDA42 /* NSDate+Periods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Periods.swift"; sourceTree = "<group>"; };
+		DF789A4B1B03CBF000F16AA7 /* NSDate+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Count.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5FA97B1B031C1A00EFDA42 /* AppDelegate.swift */,
+				DF5FA99D1B031CD200EFDA42 /* NSDate+Utilities */,
 				DF5FA97D1B031C1A00EFDA42 /* ViewController.swift */,
 				DF5FA97F1B031C1A00EFDA42 /* Main.storyboard */,
 				DF5FA9821B031C1A00EFDA42 /* Images.xcassets */,
@@ -110,6 +119,17 @@
 				DF5FA9901B031C1A00EFDA42 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF5FA99D1B031CD200EFDA42 /* NSDate+Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FA99B1B031C9100EFDA42 /* NSDate+Main.swift */,
+				DF5FA99E1B031E1000EFDA42 /* NSDate+Comparable.swift */,
+				DF5FA9A01B031E9C00EFDA42 /* NSDate+Periods.swift */,
+				DF789A4B1B03CBF000F16AA7 /* NSDate+Count.swift */,
+			);
+			name = "NSDate+Utilities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF789A4C1B03CBF000F16AA7 /* NSDate+Count.swift in Sources */,
 				DF5FA97E1B031C1A00EFDA42 /* ViewController.swift in Sources */,
 				DF5FA97C1B031C1A00EFDA42 /* AppDelegate.swift in Sources */,
+				DF5FA9A11B031E9C00EFDA42 /* NSDate+Periods.swift in Sources */,
+				DF5FA99F1B031E1100EFDA42 /* NSDate+Comparable.swift in Sources */,
+				DF5FA99C1B031C9100EFDA42 /* NSDate+Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +435,7 @@
 				DF5FA9971B031C1A00EFDA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF5FA9981B031C1A00EFDA42 /* Build configuration list for PBXNativeTarget "NSDate_ExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +444,7 @@
 				DF5FA99A1B031C1A00EFDA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
