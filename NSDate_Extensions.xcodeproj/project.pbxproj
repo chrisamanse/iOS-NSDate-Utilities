@@ -44,6 +44,8 @@
 		DF5FA99E1B031E1000EFDA42 /* NSDate+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Comparable.swift"; sourceTree = "<group>"; };
 		DF5FA9A01B031E9C00EFDA42 /* NSDate+Periods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Periods.swift"; sourceTree = "<group>"; };
 		DF789A4B1B03CBF000F16AA7 /* NSDate+Count.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Count.swift"; sourceTree = "<group>"; };
+		DF789A4D1B03DB2100F16AA7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF789A4E1B03DB3700F16AA7 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,8 @@
 		DF5FA96D1B031C1900EFDA42 = {
 			isa = PBXGroup;
 			children = (
+				DF789A4E1B03DB3700F16AA7 /* LICENSE.md */,
+				DF789A4D1B03DB2100F16AA7 /* README.md */,
 				DF5FA9781B031C1900EFDA42 /* NSDate_Extensions */,
 				DF5FA98E1B031C1A00EFDA42 /* NSDate_ExtensionsTests */,
 				DF5FA9771B031C1900EFDA42 /* Products */,
