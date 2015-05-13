@@ -69,6 +69,8 @@ NSDate+Main also provides an NSDateUnit enum to enumerate Year, Month, Week, Day
 
 ## NSDate+Comparable.swift:
 
+Compare dates using operators.
+
     let today = NSDate()
     today < NSDate.tomorrow() // True
     today > NSDate.yesterday() // True
@@ -76,6 +78,8 @@ NSDate+Main also provides an NSDateUnit enum to enumerate Year, Month, Week, Day
     today != NSDate.tomorrow()
 
 ## NSDate+Periods.swift:
+
+Get start, end, next, or previous of a unit (Year, Month, Day, Week, Hour, Minute, Second) of a date.
 
     let date = NSDate.dateWithYear(2015, month: 10, day: 20, hour: 8, minute: 40, second: 9) // Oct 20, 2015 8:40:09 AM
     date.startOf(.Day) // Oct 20, 2015 at 12 AM
@@ -98,6 +102,23 @@ NSDate+Main also provides an NSDateUnit enum to enumerate Year, Month, Week, Day
     date.previous(.Year) // Oct 20, 2014, 8:40:09 AM
     // You can also use .Second, .Minute, .Hour, and .Week
     
+
+## NSDate+Count.swift
+
+Count units from date to another date
+
+    let today = NSDate()
+    let tomorrow = today.next(.Day)
+    today.count(.Day, toDate: tomorrow) // 1
+    today.preciseCount(.Day, toDate: tomorrow) // 1.0
+    today.count(.Hour, toDate: tomorrow) // 24
+    
+    // Difference between count and preciseCount
+    let startOfDay = today.startOf(.Day)
+    let lunch = NSDate.dateWithYear(startOfDay.year, month: startOfMonth.month, day: startOfMonth.day, hour: 12, minute: 0, andSecond: 0)
+    startOfDay.count(.Day, toDate: lunch) // 0
+    startOfDay.preciseCount(.Day, toDate: lunch) // 0.5 (Half a day or 12 hours)
+    startOfDay.preciseCount(.Hour, toDate: lunch) // 12 (hours)
 
 # License
 This software is licensed under the [MIT License](./LICENSE.md)
