@@ -67,6 +67,15 @@ NSDate+Main also provides an NSDateUnit enum to enumerate Year, Month, Week, Day
     NSDate().isWeekend // Check if date is a weekend
     NSDate().isWeekday
 
+## NSDate+Comparable.swift:
+
+    let today = NSDate()
+    today < NSDate.tomorrow() // True
+    today > NSDate.yesterday() // True
+    today == today // True
+    today != NSDate.tomorrow()
+
+
 
 # License
 This software is licensed under the [MIT License](./LICENSE.md)
