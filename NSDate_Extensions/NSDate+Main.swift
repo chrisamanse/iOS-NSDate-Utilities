@@ -29,7 +29,7 @@ import Foundation
 
 // MARK: - NSDate Units
 
-enum NSDateUnit: Int {
+public enum NSDateUnit: Int {
     case Second = 1
     case Minute
     case Hour
