@@ -29,9 +29,24 @@ import Foundation
 
 extension NSDate {
     func count(unit: NSDateUnit, toDate date: NSDate) -> Int {
-        return Int(date.timeIntervalSinceDate(self).count(unit))
+        return Int(preciseCount(unit, toDate: date))
     }
     func preciseCount(unit: NSDateUnit, toDate date: NSDate) -> Double {
         return date.timeIntervalSinceDate(self).count(unit)
     }
+    
+    class func count(unit: NSDateUnit, inA largerUnit: NSDateUnit, fromDate date: NSDate) -> Int {
+        return Int(NSDate.preciseCount(unit, inA: largerUnit, fromDate: date))
+    }
+    
+    class func preciseCount(unit: NSDateUnit, inA largerUnit: NSDateUnit, fromDate date: NSDate) -> Double {
+        if unit.rawValue < largerUnit.rawValue {
+            let startDate = date.startOf(largerUnit)
+            return startDate.preciseCount(unit, toDate: startDate.next(largerUnit))
+        } else if unit.rawValue == largerUnit.rawValue {
+            return 1
+        }
+        return 0
+    }
+    
 }
