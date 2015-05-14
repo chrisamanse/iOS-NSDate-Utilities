@@ -127,5 +127,10 @@ Count units from date to another date
     startOfDay.preciseCount(.Day, toDate: lunch) // 0.5 (Half a day or 12 hours)
     startOfDay.preciseCount(.Hour, toDate: lunch) // 12 (hours)
 
+Count units from a larger unit based on a given date
+
+    let daysInMonthToday = NSDate.count(.Day, inA: .Month, fromDate: NSDate.today()) // Count days in current month
+    let daysInYearToday = NSDate.preciseCount(.Day, inA: .Year, fromDate: NSDate.today()) // Count days in year precisely
+
 # License
 This software is licensed under the [MIT License](./LICENSE.md).
