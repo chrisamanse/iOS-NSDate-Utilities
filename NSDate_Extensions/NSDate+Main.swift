@@ -70,7 +70,7 @@ extension NSTimeInterval {
         case .Week:
             return self / 1.weeks
         case .Month:
-            return self / 31.days // Inaccurate - not all months have 31 days
+            return self / 31.days // Inaccurate - not all months have 31 days, maybe modify to get days in current month?
         case .Year:
             return self / 365.days // Inaccurate - not all years have 365 days
         }
