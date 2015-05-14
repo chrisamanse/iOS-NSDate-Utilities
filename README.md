@@ -128,4 +128,4 @@ Count units from date to another date
     startOfDay.preciseCount(.Hour, toDate: lunch) // 12 (hours)
 
 # License
-This software is licensed under the [MIT License](./LICENSE.md)
+This software is licensed under the [MIT License](./LICENSE.md).
