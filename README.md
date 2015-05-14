@@ -18,7 +18,7 @@ Just add NSDate+Main.swift to your project for the main extension. It contains d
 
 # Usage
 
-## NSInterval extension:
+## NSTimeInterval extension:
 
     var seconds = 2.seconds // 2 (as NSTimeInterval)
     seconds = 3.minutes // 3*60 = 180
