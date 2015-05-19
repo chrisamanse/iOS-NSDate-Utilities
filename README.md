@@ -133,4 +133,4 @@ Count units from a larger unit based on a given date.
     let daysInYearToday = NSDate.preciseCount(.Day, inA: .Year, fromDate: NSDate.today()) // Count days in year precisely
 
 # License
-This software is distributed under the [MIT License](./LICENSE.md).
+Copyright (c) 2015 Joe Christopher Paul Amanse. This software is distributed under the [MIT License](./LICENSE.md).
