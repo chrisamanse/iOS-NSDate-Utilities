@@ -1,7 +1,7 @@
 # iOS - NSDate Utilities
 Powerful extensions for NSDate in Swift.
 
-This project was inspired by the handful of extensions for NSDate found in GitHub. The extensions I found were too big when I only needed some functions. So I created my own extensions, and grouped its functions, so others can import what they only need. I also made an NSDateUnit enum to enumerate Year, Month, Week, Day, Hour, Minute, Second values which is used in some functions in the extensions. This extensions are divided into:
+This project was inspired by the handful of extensions for NSDate found in GitHub. The extensions I found were too big when I only needed some functions. So I created my own extensions, and grouped its functions into separate files, so others can import what they only need. I also made an NSDateUnit enum to enumerate Year, Month, Week, Day, Hour, Minute, Second values which is used in some functions in the extensions. This extensions are divided into:
 
 <b>NSDate+Main.swift</b> - contains the core of the whole extension. Date creation, conversion and components are also located here. It also contains the extensions for NSTimeInterval for time interval conversions, which is used by the NSDate extensions. It also contains the decleration of NSDateUnit enum
 
