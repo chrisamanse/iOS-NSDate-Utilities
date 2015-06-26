@@ -4,7 +4,7 @@ Powerful extensions for NSDate in Swift.
 # Installation
 
 Import only what you need:
-* NSDate+Main.swift (required by the rest)
+* NSDate+Main.swift - *required*
 * NSDate+Comparable.swift
 * NSDate+Periods.swift
 * NSDate+Periods.swift
