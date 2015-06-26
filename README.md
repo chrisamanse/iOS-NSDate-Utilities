@@ -1,20 +1,13 @@
 # iOS - NSDate Utilities
 Powerful extensions for NSDate in Swift.
 
-This project was inspired by the handful of extensions for NSDate found in GitHub. The extensions I found were too big when I only needed some functions. So I created my own extensions, and grouped its functions into separate files, so others can import what they only need. I also made an NSDateUnit enum to enumerate Year, Month, Week, Day, Hour, Minute, Second values which is used in some functions in the extensions. This extensions are divided into:
-
-<b>NSDate+Main.swift</b> - contains the core of the whole extension. Date creation, conversion and components are also located here. It also contains the extensions for NSTimeInterval for time interval conversions, which is used by the NSDate extensions. It also contains the decleration of NSDateUnit enum
-
-<b>NSDate+Comparable.swift</b> - contains the implementation of Equatable and Comparable protocols for NSDate so NSDate can use the operators ==, <, <=, >, >=
-
-<b>NSDate+Periods.swift</b> - contains the functions for getting start/end/next/previous of a year, month, week, day, hour, minute, and second
-
-<b>NSDate+Periods.swift</b> - contains the functions for counting of year, month, week, day, hour, minute, or second within the receiver and a given date
-
 # Installation
-  
-Just add NSDate+Main.swift to your project for the main extension. It contains date creation, component getters. It is also required for other extra utility extensions inside the NSDate+Utilities folder. You can optionally add NSDate+Comparable.swift, NSDate+Periods.swift, NSDate+Count.swift, which are other extensions that make NSDate more powerful. However, if you don't need them, you don't need to add it to your project.
 
+Import only what you need:
+* NSDate+Main.swift (required by the rest)
+* NSDate+Comparable.swift
+* NSDate+Periods.swift
+* NSDate+Periods.swift
 
 # Usage
 
