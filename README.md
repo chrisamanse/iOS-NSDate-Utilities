@@ -141,5 +141,20 @@ let daysInMonthToday = NSDate.count(.Day, inA: .Month, fromDate: NSDate.today())
 let daysInYearToday = NSDate.preciseCount(.Day, inA: .Year, fromDate: NSDate.today()) // Count days in year precisely
 ```
 
+## NSDate+RoundDown
+### There is created by [YueJun1991](https://github.com/YueJun1991).
+RoundDown any units you don't want.
+
+```swift
+var date_1 = NSDate().roundDownFrom(.Second)
+var date_2 = NSDate().roundDownFrom(.Second)
+
+date_1 <= date_2 // true
+date_1 >= date_2 // true
+
+date_1 < date_2 // false
+date_1 > date_2 // false
+```
+
 # License
 Copyright (c) 2015 Joe Christopher Paul Amanse. This software is distributed under the [MIT License](./LICENSE.md).
