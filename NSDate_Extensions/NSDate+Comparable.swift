@@ -27,12 +27,25 @@
 
 import Foundation
 
-extension NSDate: Equatable {}
+//  Redundant conformance of 'NSDate' to protocol 'Equatable'
+//  extension NSDate: Equatable {}
 public func ==(lhs: NSDate, rhs: NSDate) -> Bool {
     return lhs.isEqualToDate(rhs)
 }
 
-extension NSDate: Comparable {}
+extension NSDate: Comparable { }
 public func <(lhs: NSDate, rhs: NSDate) -> Bool {
     return lhs.compare(rhs) == .OrderedAscending
+}
+
+public func >(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs.compare(rhs) == .OrderedDescending
+}
+
+public func <=(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs < rhs || lhs.compare(rhs) == .OrderedSame
+}
+
+public func >=(lhs: NSDate, rhs: NSDate) -> Bool {
+    return lhs > rhs || lhs.compare(rhs) == .OrderedSame
 }
