@@ -27,7 +27,8 @@
 
 import Foundation
 
-extension NSDate: Equatable {}
+//  Redundant conformance of 'NSDate' to protocol 'Equatable'
+//  extension NSDate: Equatable {}
 public func ==(lhs: NSDate, rhs: NSDate) -> Bool {
     return lhs.isEqualToDate(rhs)
 }
