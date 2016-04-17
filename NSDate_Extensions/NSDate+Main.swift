@@ -139,43 +139,43 @@ extension NSDate {
     
     // MARK: Calendar Units
     var era: Int {
-        return calendar.component(.CalendarUnitEra, fromDate: self)
+        return calendar.component(.Era, fromDate: self)
     }
     var year: Int {
-        return calendar.component(.CalendarUnitYear, fromDate: self)
+        return calendar.component(.Year, fromDate: self)
     }
     var month: Int {
-        return calendar.component(.CalendarUnitMonth, fromDate: self)
+        return calendar.component(.Month, fromDate: self)
     }
     var day: Int {
-        return calendar.component(.CalendarUnitDay, fromDate: self)
+        return calendar.component(.Day, fromDate: self)
     }
     var hour: Int {
-        return calendar.component(.CalendarUnitHour, fromDate: self)
+        return calendar.component(.Hour, fromDate: self)
     }
     var minute: Int {
-        return calendar.component(.CalendarUnitMinute, fromDate: self)
+        return calendar.component(.Minute, fromDate: self)
     }
     var second: Int {
-        return calendar.component(.CalendarUnitSecond, fromDate: self)
+        return calendar.component(.Second, fromDate: self)
     }
     var weekday: Int {
-        return calendar.component(.CalendarUnitWeekday, fromDate: self)
+        return calendar.component(.Weekday, fromDate: self)
     }
     var weekdayOrdinal: Int {
-        return calendar.component(.CalendarUnitWeekdayOrdinal, fromDate: self)
+        return calendar.component(.WeekdayOrdinal, fromDate: self)
     }
     var quarter: Int {
-        return calendar.component(.CalendarUnitQuarter, fromDate: self)
+        return calendar.component(.Quarter, fromDate: self)
     }
     var weekOfMonth: Int {
-        return calendar.component(.CalendarUnitWeekOfMonth, fromDate: self)
+        return calendar.component(.WeekOfMonth, fromDate: self)
     }
     var weekOfYear: Int {
-        return calendar.component(.CalendarUnitWeekOfYear, fromDate: self)
+        return calendar.component(.WeekOfYear, fromDate: self)
     }
     var nanosecond: Int {
-        return calendar.component(.CalendarUnitNanosecond, fromDate: self)
+        return calendar.component(.Nanosecond, fromDate: self)
     }
     
     var isToday: Bool {

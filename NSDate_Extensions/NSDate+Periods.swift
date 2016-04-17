@@ -85,7 +85,7 @@ extension NSDate {
             
             return calendar.dateFromComponents(components)!
         case .Month:
-            let daysInMonth = calendar.rangeOfUnit(.CalendarUnitDay, inUnit: .CalendarUnitMonth, forDate: self).length
+            let daysInMonth = calendar.rangeOfUnit(.Day, inUnit: .Month, forDate: self).length
             
             return NSDate.dateWithYear(year, month: month, day: daysInMonth, hour: 23, minute: 59, andSecond: 59)!
         case .Year:
