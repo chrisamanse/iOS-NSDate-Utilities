@@ -142,4 +142,6 @@ let daysInYearToday = NSDate.preciseCount(.Day, inA: .Year, fromDate: NSDate.tod
 ```
 
 # License
-Copyright (c) 2015 Joe Christopher Paul Amanse. This software is distributed under the [MIT License](./LICENSE.md).
+Copyright (c) 2016 Joe Christopher Paul Amanse
+
+This software is distributed under the [MIT License](./LICENSE.md).
