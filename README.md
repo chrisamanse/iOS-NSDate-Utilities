@@ -20,9 +20,9 @@ seconds = 1.hours // 1*60*60 = 3600
 seconds = 1.days // 1*60*60*24 = 86400
 seconds = 1.weeks // 1*60*60*24*7 = 604800
 
-let howManyMinutesIn3600Seconds = 3600.count(.Minute) // 60.0 (as Double - since there is exactly 60 minutes in 3600 seconds)
-let minutes = 30.count(.Minute) // 0.5 (Half a minute)
-let hoursInWeek = 1.week.count(.Hour) // 168.0 (24 hours * 7 days)
+let minutesIn3600Seconds = 3600.preciseCount(.Minute) // 60.0 (as Double - since there is exactly 60 minutes in 3600 seconds)
+let minutes = 30.preciseCount(.Minute) // 0.5 (Half a minute)
+let hoursInWeek = 1.week.preciseCount(.Hour) // 168.0 (24 hours * 7 days)
 
 // You can use the rest of the NSDateUnit values to count the desired unit
 ```
